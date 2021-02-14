@@ -1,0 +1,294 @@
+
+:root {
+    --dark-color: #000000;
+    --med-color: #0c0909;
+    --light-color: #b6d6fc;
+    --almost-white: #dfe8f2;
+}
+
+/* General Settings */
+body,p,a,ul,li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: rgba(161, 154, 221, 0.151);
+    overflow-x: hidden;
+    font-size: 0.6em;
+    color: var(--med-color);
+}
+
+/* Name */
+h1 {
+    color: black;
+    background-color: var(--light-color);
+    padding: 10px 5px 0 5px;
+    border: 2px var(--med-color);
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Header Nav Buttons */
+.nav-links {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+}
+
+.nav-links li {
+    list-style-type: none;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.button {
+    background: var(--light-color);
+    border: 2px solid var(--med-color);
+    color: var(--med-color);
+    padding: 5px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+    display: inline-block;
+}
+
+.button:hover {
+    color: white;
+    background: var(--light-color);
+}
+
+/* Banner and Job Title */
+/* .web-developer-image {
+    position: relative;
+    text-align: center;
+} */
+
+.web-developer-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+}
+
+/* Main Section Headings */
+h3 {
+    font-family: serif;
+    font-size: 0.7em;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+
+/* Picture and Intro */
+.about-me {
+    padding-bottom: 10px;
+}
+
+
+.about-me-info, #resume {
+    padding: 10px;
+}
+
+/* Sectional Break - Visible Line */
+hr {
+    border: none;
+    border-top: 3px solid var(--med-color);
+    overflow: hidden;
+    text-align: center;
+    height: 2px;
+}
+
+/* Work Images, Links, and Hover Effects */
+#work {
+    text-align: center;
+}
+
+.refactor, .password, .quiz, .planner {
+    position: relative;
+    text-align: center;
+}
+
+.refactor-heading, .password-heading, .quiz-heading, .planner-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8em;
+    font-weight: var(--dark-color);
+    color: rgb(12, 12, 12);
+}
+
+.refactor-heading, .password-heading, .quiz-heading, .planner-heading{
+    filter: sepia(100%);
+}
+
+/* Contact Me */
+#contact-me {
+    text-align: center;
+}
+
+#contact-me ul li {
+    line-height: 1.4;
+    font-size: var(--dark-color);
+}
+
+/* Footer */
+.footer-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.footer-links {
+    text-align-last: center;
+}
+
+.footer-links li {
+    font-size: 0.7em;
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #b6d6fc;
+}
+
+.footer-links li a {
+    border-radius: 10px;
+    color: rgb(15, 15, 15);
+}
+
+/* Media Queries and Responsive Design */
+
+/* Extra small devices: phone */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.7em;
+    }
+    .nav-links li {
+        font-size: 0.8em;
+    }        
+    body {
+        font-size: 1em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    .web-developer-heading {
+        font-size: 1.3em;
+    }
+    .footer-links li {
+        font-size: 0.6em;
+    }
+}
+
+/* Small devices: large phone, portrait tablet */
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 1.9em;
+    }
+    .nav-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .nav-links li {
+        font-size: 1em;
+    }     
+    body {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    .web-developer-heading {
+        font-size: 1.5em;
+    }
+    .footer-links li {
+        font-size: 0.9em;
+    }
+
+/* Medium devices: landscape tablet */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 2.1em;
+    }
+    .nav-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .nav-links li {
+        font-size: 1.2em;
+    }     
+    body {
+        font-size: 1.4em;
+    }
+    h3 {
+        font-size: 1.7em;
+    }
+    .web-developer-heading {
+        font-size: 1.7em;
+    }
+    .footer-links li {
+        font-size: 1.2em;
+    }
+}
+
+/* Large devices: laptop, desktop */
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 2.4em;
+    }
+    .nav-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .nav-links li {
+        font-size: 1.4em;
+    }     
+    body {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    .web-developer-heading {
+        font-size: 2em;
+    }
+    .footer-links li {
+        font-size: 1.4em;
+    }
+}
+
+/* Extra large devices: laptop, desktop */
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 2.6em;
+    }
+    .nav-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .nav-links li {
+        font-size: 1.6em;
+    }     
+    body {
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    .web-developer-heading {
+        font-size: 2.2em;
+    }
+    .footer-links li {
+        font-size: 1.6em;
+    }
+}
