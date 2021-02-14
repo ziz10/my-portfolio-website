@@ -182,15 +182,15 @@ hr {
     h3 {
         font-size: 1.3em;
     }
-    .web-developer-heading {
-        font-size: 1.3em;
+    /* .web-developer-heading {
+        font-size: 1.3em; */
     }
     .footer-links li {
         font-size: 0.6em;
     }
 }
 
-/* Small devices: large phone, portrait tablet */
+/* Small devices: large phone, tablet */
 @media only screen and (min-width: 600px) {
     h1 {
         font-size: 1.9em;
@@ -208,14 +208,14 @@ hr {
     h3 {
         font-size: 1.5em;
     }
-    .web-developer-heading {
-        font-size: 1.5em;
+    /* .web-developer-heading {
+        font-size: 1.5em; */
     }
     .footer-links li {
         font-size: 0.9em;
     }
 
-/* Medium devices: landscape tablet */
+/* Medium devices:  tablet */
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 2.1em;
@@ -233,15 +233,15 @@ hr {
     h3 {
         font-size: 1.7em;
     }
-    .web-developer-heading {
-        font-size: 1.7em;
+    /* .web-developer-heading {
+        font-size: 1.7em; */
     }
     .footer-links li {
         font-size: 1.2em;
     }
 }
 
-/* Large devices: laptop, desktop */
+/* desktop */
 @media only screen and (min-width: 992px) {
     h1 {
         font-size: 2.4em;
@@ -259,9 +259,9 @@ hr {
     h3 {
         font-size: 2em;
     }
-    .web-developer-heading {
+    /* .web-developer-heading {
         font-size: 2em;
-    }
+    } */
     .footer-links li {
         font-size: 1.4em;
     }
@@ -285,8 +285,8 @@ hr {
     h3 {
         font-size: 2em;
     }
-    .web-developer-heading {
-        font-size: 2.2em;
+    /* .web-developer-heading {
+        font-size: 2.2em; */
     }
     .footer-links li {
         font-size: 1.6em;
