@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="reset" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+
 
     <title>Portfolio</title>
 </head>
@@ -16,7 +16,7 @@
         <h1>Abdoul Bass</h1>
         <ul class="nav-links grid">
             <li><a href="#about-me" class="button">About Me</a></li>
-            <li><a href="#work" class="button">Work</a></li>
+            <li><a href="#work-section" class="button">Work</a></li>
             <li><a href="#contact-me" class="button">Contact Me</a></li>
             <li><a href="#resume" class="button">Resume</a></li>
         </ul>
@@ -26,9 +26,9 @@
 
 
     <section id="about-me" class="grid">
-        <h3>About Me</h3>
+        <h3 class="section-title">About Me</h3>
         <div class="about-me-photo">
-        
+            <img id="profile-picture" src="./images/my-profile.jpg">
         </div>
         <div class="about-me-info">
             <p> Lorem ipsum dolor sit amet. Ea dicta tempora At consequatur quia eos veritatis iure et officiis
@@ -49,34 +49,36 @@
     <br>
     <hr>
 
-    <section id="work" class="grid">
+    <section id="work-section" class="grid">
         <h3>Work</h3>
         <br>
-        <div class="work-options">
-            <div class="refactor">
+        <div class="work-card refactor">
 
-                    <div class="refactor-heading">Code Refactor</div>
-                </a>
-            </div>
-            <br>
-            <div class="password">
-              
-                    <div class="password-heading">Password Generator</div>
-                </a>
-            </div>
-            <br>
-            <div class="quiz">
-               
-                    <div class="quiz-heading">Code Quiz</div>
-                </a>
-            </div>
-            <br>
-            <div class="planner">
-                
-                    <div class="planner-heading">Day Planner</div>
-                </a>
-            </div>
+            Code Refactor
+            <a href="https://github.com/ziz10/coderefactor">Github repository</a>
+            <a href="https://ziz10.github.io/coderefactor/">Live page</a>
         </div>
+        <br>
+        <div class="work-card password">
+
+            Password Generator
+
+        </div>
+        <br>
+        <div class="work-card quiz">
+
+            Code Quiz
+            <p>Upcoming repository link</p>
+
+        </div>
+        <br>
+        <div class="work-card planner">
+
+            Day Planner
+            <p>Upcoming repository link</p>
+
+        </div>
+
     </section>
     <br>
     <hr>
@@ -89,7 +91,6 @@
                 <li><a href="tel +4259057173">4259057173</a></li>
                 <li><a href="mailto:bass.abdoulaziz1@gmail.com">bass.abdoulaziz1@gmail.com</a></li>
                 <li><a href="https://github.com/ziz10">GitHub</a></li>
-                <li>LinkedIn</li>
             </ul>
         </nav>
     </section>
@@ -127,7 +128,7 @@
         <div class="footer grid">
             <ul class="footer-links">
                 <li><a href="#about-me">About Me</a></li>
-                <li><a href="#work">Work</a></li>
+                <li><a href="#work-section">Work</a></li>
                 <li><a href="#contact-me">Contact Me</a></li>
                 <li><a href="#resume">Resume</a></li>
             </ul>

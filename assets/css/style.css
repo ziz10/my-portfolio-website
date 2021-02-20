@@ -11,6 +11,7 @@ body,p,a,ul,li {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: sans-serif;
 }
 
 body {
@@ -18,19 +19,29 @@ body {
     overflow-x: hidden;
     font-size: 0.6em;
     color: var(--med-color);
+    margin-left: 5%;
+    margin-right: 2%;
 }
-
+#profile-picture{
+    width: 180px;
+}
+.work-card a{
+    color:white;
+}
 /* Name */
 h1 {
     color: black;
-    background-color: var(--light-color);
+    background-color: steelblue;
     padding: 10px 5px 0 5px;
     border: 2px var(--med-color);
-    font-size: 1.7em;
+    font-size: x-large;
     text-align: center;
     font-weight: bold;
+    border-radius: 10px;
 }
-
+li{
+    list-style-type: none;
+}
 /* Header Nav Buttons */
 .nav-links {
     display: grid;
@@ -39,12 +50,12 @@ h1 {
 
 .nav-links li {
     list-style-type: none;
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-align: center;
 }
 
 .button {
-    background: var(--light-color);
+    background-color: steelblue;
     border: 2px solid var(--med-color);
     color: var(--med-color);
     padding: 5px 12px;
@@ -53,6 +64,8 @@ h1 {
     text-transform: uppercase;
     box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
     display: inline-block;
+    font-size: xx-large;
+    
 }
 
 .button:hover {
@@ -83,17 +96,39 @@ h3 {
     text-align: center;
     padding-bottom: 0;
     margin-bottom: 0;
+    align-content: center;
 
 }
-
+p{
+    font-size: x-large;
+    font-family: sans-serif;
+    
+}
 /* Picture and Intro */
-.about-me {
+#about-me {
     padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
-
+.section-title{
+    width: 100%;
+}
 
 .about-me-info, #resume {
-    padding: 10px;
+    padding: 20px;
+}
+
+.about-me-photo{
+    width: 20%;
+    margin: 0;
+
+}
+img{
+    border-radius: 50%;
+}
+.about-me-info{
+    width: 70%;
+    margin: 0;
 }
 
 /* Sectional Break - Visible Line */
@@ -108,13 +143,42 @@ hr {
 /* Work Images, Links, and Hover Effects */
 #work {
     text-align: center;
+    display: contents;
+    flex-wrap: wrap; 
 }
 
+.work-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    height: 150px;
+ border-spacing: 20px;
+
+
+}
+.refactor{
+    background-image: url("https://m.economictimes.com/thumb/msid-74211022,width-1200,height-900,resizemode-4,imgsize-743396/quantum-computing.jpg");
+}
+.password{
+    background-image: url("https://www.brookings.edu/wp-content/uploads/2017/11/metro_20171121_tech-empowers-tech-polarizes-mark-muro.jpg");
+
+}
+
+.quiz{
+    background-image: url("https://www.pewresearch.org/wp-content/uploads/2020/10/FT_20.10.26_TechCompanies_feature.jpg");
+}
 .refactor, .password, .quiz, .planner {
     position: relative;
     text-align: center;
+    display: grid;
+color: white;
+    
 }
-
+.planner{
+    background-image: url("https://globalhealth.harvard.edu/wp-content/uploads/2020/07/TechHealth2.jpg");
+}
 .refactor-heading, .password-heading, .quiz-heading, .planner-heading {
     position: absolute;
     top: 50%;
@@ -149,21 +213,29 @@ hr {
 
 .footer-links {
     text-align-last: center;
+    font-size: x-large;
+
 }
 
 .footer-links li {
-    font-size: 0.7em;
+    font-size: xx-small;
     display: inline-block;
     text-align: center;
     margin: 5px;
     padding: 5px;
     text-decoration: none;
     background-color: #b6d6fc;
+    border-radius: 20px;
+    background-color: steelblue;
+
+    
 }
 
 .footer-links li a {
     border-radius: 10px;
     color: rgb(15, 15, 15);
+    text-transform: uppercase;
+    font-size: 35px;
 }
 
 /* Media Queries and Responsive Design */
